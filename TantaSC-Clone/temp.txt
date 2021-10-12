@@ -1,0 +1,9 @@
+<figure class="wpb_wrapper vc_figure">
+			<a href="https://play.google.com/store/apps/details?id=me.digitalharbor.tantasc" target="_blank" class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey"><img src="https://www.tantasc.net/wp-content/uploads/2019/11/store-play-150x51.png" class="vc_single_image-img attachment-thumbnail" alt="" srcset="https://www.tantasc.net/wp-content/uploads/2019/11/store-play-150x51.png 150w, https://www.tantasc.net/wp-content/uploads/2019/11/store-play-32x10.png 32w" sizes="(max-width: 150px) 100vw, 150px" width="150" height="51"></a>
+		</figure>
+
+
+
+        <figure class="wpb_wrapper vc_figure">
+			<a href="https://apps.apple.com/us/app/tanta-sporting-club/id1478887455?ls=1" target="_blank" class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey"><img src="https://www.tantasc.net/wp-content/uploads/2019/11/store-app-150x52.png" class="vc_single_image-img attachment-thumbnail" alt="" srcset="https://www.tantasc.net/wp-content/uploads/2019/11/store-app-150x52.png 150w, https://www.tantasc.net/wp-content/uploads/2019/11/store-app-32x10.png 32w" sizes="(max-width: 150px) 100vw, 150px" width="150" height="52"></a>
+		</figure>
