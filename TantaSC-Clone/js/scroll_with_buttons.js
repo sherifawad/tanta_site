@@ -1,7 +1,7 @@
 var currentItem = 0;
 
-export const scrollTo = function(e, right){
-    const ss = document.querySelectorAll(".slide_item");
+export const scrollTo = function(e, right, slides){
+    const ss = document.querySelectorAll(slides);
     var aa = Array.from(ss);
     if(right){
         currentItem--;

@@ -65,8 +65,7 @@
     margin-bottom: 15px;
   }
   
-  .post_thumbnail,
-  .post_thumbnail a img {
+  .post_thumbnail{
     width: 100%;
   }
   .post_text {

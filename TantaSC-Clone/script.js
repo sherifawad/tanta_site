@@ -15,5 +15,8 @@ document.querySelector(".dot_1").addEventListener("click", () => currentSlide(1)
 document.querySelector(".dot_2").addEventListener("click", () => currentSlide(2));
 document.querySelector(".dot_3").addEventListener("click", () => currentSlide(3));
 
-const prev_control = document.querySelector(".prev_control").addEventListener("click", e => scrollTo(e, false));
-const next_control = document.querySelector(".next_control").addEventListener("click", e => scrollTo(e, true));
+document.querySelector("#players_slides_prev_control").addEventListener("click", e => scrollTo(e, false, ".player"));
+document.querySelector("#players_slides_next_control").addEventListener("click", e => scrollTo(e, true, ".player"));
+
+document.querySelector("#champ_slides_prev_control").addEventListener("click", e => scrollTo(e, false, ".champ"));
+document.querySelector("#champ_slides_next_control").addEventListener("click", e => scrollTo(e, true, ".champ"));
