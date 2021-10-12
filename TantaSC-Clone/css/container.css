@@ -2,7 +2,7 @@
 
 @import url(posts.css);
 
-@import url(slide_list.css);
+@import url(scroll_with_buttons.css);
 
 .container {
   padding: 0 20px;
