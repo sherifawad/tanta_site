@@ -1,11 +1,21 @@
+@import url(base.css:root);
+
+:scope {
+  --info-height: 2em;
+  --container-max-height: 300px;
+  --container-max-width: 150px;
+}
+
 .slides {
   direction: rtl;
+  margin-top: 0px;
 }
 .slide_header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  /* padding: 0px 15px; */
 }
 
 .slider_controls {
@@ -35,26 +45,44 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .slideshow_container ul {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  /* IE and Edge */
+  -ms-overflow-style: none;
+
+  /* Firefox */
+  scrollbar-width: none;
 }
+
+/* .slideshow_container {
+  overflow-x: scroll;
+} */
 
 .slideshow_container ul {
   list-style: none;
   display: flex;
-  overflow-x: scroll;
-  column-gap: 15px;
+  width: 100%;
+  /* height: 300px; */
+  /* overflow-x: scroll; */
+  /* column-gap: 15px; */
   padding-right: 0;
+  /*display: grid;
+  grid-template-columns: repeat(5, minmax(290px, 1fr));
+  gap: 15px 10px; */
+  transition: 0.4s ease-in-out;
+  /* overflow: hidden; */
+  overflow-x: scroll;
+  /* scroll-behavior: smooth; */
 }
 
 .slideshow_container ul li {
   flex: 0 0 290px;
   margin: auto 5px;
+  min-width: 150px;
+  transition: 0.4s ease-in-out;
 }
 
-.player_image {
-  height: 280px;
-}
+/* .player_image img {
+  height: calc((100% - var(--info-height)) / 1.5);
+} */
 
 .slide_item {
   position: relative;
@@ -65,13 +93,15 @@
   left: 0;
   top: 0;
   background: rgba(0, 0, 0, 0.5);
-  padding: 8px 14px 8px 8px;
+  padding: 5px;
 }
 
 .player_like a {
   color: white;
   text-decoration: none;
-  display: block;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
 .like_button span,
@@ -95,15 +125,15 @@
 
 .slide_item .player_info {
   position: relative;
-  height: 32px;
-  line-height: 32px;
+  /* height: var(--info-height);
+  line-height: var(--info-height); */
 }
 
 .slide_item .player_info .position {
   position: relative;
   overflow: hidden;
   font-size: 15px;
-  height: 32px;
+  height: var(--info-height);
   background: #373995;
   color: #fff;
   text-transform: uppercase;
@@ -116,7 +146,7 @@
   background: yellow;
   font-size: 15px;
   color: #373995;
-  padding: 0 12px;
+  /* padding: 0 12px; */
   font-weight: normal;
   margin: 0 0 0 13px;
 }
@@ -126,7 +156,7 @@
   position: absolute;
   left: -13px;
   top: 0;
-  border-bottom: 32px solid #373995;
+  border-bottom: 30px solid #373995;
   border-right: 11px solid transparent;
 }
 
@@ -139,7 +169,7 @@
   position: absolute;
   left: -11px;
   top: 0;
-  border-top: 32px solid yellow;
+  border-top: 30px solid yellow;
   border-left: 11px solid transparent;
 }
 
@@ -151,5 +181,33 @@
 .slide_item figcaption {
   display: table-cell;
   vertical-align: middle;
+  text-align: center;
+}
+
+/* video slides */
+
+.vid_slides {
+  background: #ffffff
+    url(https://www.tantasc.net/wp-content/uploads/2019/10/Video-1.png?id=10262);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.auto_fit_columns ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+  gap: 15px 10px;
+  list-style: none;
+  /* display: flex; */
+  overflow-x: scroll;
+}
+
+.slide_item.vid {
+  /* padding: 0 10px 0 10px; */
+}
+
+.vid_title {
+  color: #ffcc00;
   text-align: center;
 }

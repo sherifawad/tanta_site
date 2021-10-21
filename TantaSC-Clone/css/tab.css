@@ -1,0 +1,58 @@
+.tabs {
+  direction: rtl;
+}
+
+.tabs_links {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 5px 5px;
+  padding: 0px;
+  justify-content: space-around;
+}
+
+ul li.tablink {
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #dadada;
+  margin: 0px;
+  transition: 0.3s;
+}
+
+.tablink a {
+  color: #373995;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  font-size: 1.1em;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+ul li.tablink:hover {
+  color: #373995;
+  background: #fef200;
+}
+
+ul li.tablink.active a {
+  color: white;
+  background-color: #373995;
+}
+
+/* Style the tab content */
+.tab_content {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  animation: fadeEffect 1s;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

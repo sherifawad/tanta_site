@@ -1,0 +1,20 @@
+.sponsors_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+/* .sponsors_list li.sponsors_item {
+  flex: 0 0 33%;
+} */
+
+.sponsors_wrapper .container {
+  background: #ffffff
+    url(https://www.tantasc.net/wp-content/uploads/2019/10/Video-1.png?id=10262);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10px 20px;
+}
