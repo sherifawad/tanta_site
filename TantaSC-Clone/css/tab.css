@@ -27,6 +27,7 @@ ul li.tablink {
   font-size: 1.1em;
   line-height: 44px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 ul li.tablink:hover {
   color: #373995;

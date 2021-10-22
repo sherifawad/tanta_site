@@ -49,12 +49,17 @@
 }
 
 .app_links {
-  display: flex;
-  background-image: url(https://www.tantasc.net/wp-content/uploads/2019/11/5454.jpg?id=10620);
+  background-image: url(../images/app-back.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  align-items: flex-end;
-  gap: 10px;
+  position: relative;
+}
+
+.app_links__container {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -90%);
 }
 
 .app_figure {
