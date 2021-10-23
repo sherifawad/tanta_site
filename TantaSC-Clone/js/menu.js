@@ -1,6 +1,6 @@
 const menu_items = document.querySelectorAll(".has-children");
 
-const colse_all_Sub_menues = function(e){
+const close_all_Sub_menues = function(e){
     let sub_menu_item = document.querySelector(".sub-menu");
     let toogle_button = document.querySelector(".dropdown-toggle");
     toogle_button.innerHTML = `<span class="screen-reader-text">Expand child menu</span>`;
@@ -16,7 +16,7 @@ const toogle_menu = function(e){
     document.querySelector(".symbol_cross").classList.toggle('menu_toggled');
     if(!nav_menu.classList.contains("menu_toggled")){
         for (const item of menu_items) {
-            colse_all_Sub_menues();
+            close_all_Sub_menues();
         }
     }
 }
@@ -38,4 +38,4 @@ const toogle_menu_item = function(e){
 
 }
 
-export {menu_items, toogle_menu, toogle_menu_item};
+export {menu_items, toogle_menu, toogle_menu_item, close_all_Sub_menues};

@@ -36,3 +36,16 @@
   flex: 0 0 100%;
   height: 0;
 }
+
+.split.flex-row {
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 95px);
+  flex-direction: row-reverse;
+}
+
+/* @media (min-width: 46rem) {
+  .header {
+    justify-content: flex-start;
+  }
+} */

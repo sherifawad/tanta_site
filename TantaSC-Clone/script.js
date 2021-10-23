@@ -1,7 +1,26 @@
-import { menu_items, toogle_menu, toogle_menu_item } from "./js/menu.js";
+import { menu_items, toogle_menu, toogle_menu_item, close_all_Sub_menues } from "./js/menu.js";
 import { plusSlides, currentSlide } from "./js/slides.js";
 import {scrollTo, translateTo} from "./js/scroll_with_buttons.js";
 import {opentab} from "./js/tab.js";
+import {show_search_input, hide_search_input} from "./js/searchBar.js";
+
+
+document.body.addEventListener('click', function(e) {
+    const search_container = document.querySelector(".search-container");
+    let xx = getComputedStyle(search_container).order;
+    if (!(search_container.contains(e.target)) && xx == 0 ) {
+        hide_search_input(search_container);
+    }
+});
+
+window.addEventListener('resize', () => {
+    const menu_items = document.querySelectorAll(".has-children");
+    for (const item of menu_items) {
+        close_all_Sub_menues();
+    }
+});
+
+document.querySelector(".search-container button").addEventListener('click', e => show_search_input(e));
 
 document.querySelector(".mobile_button").addEventListener('click', toogle_menu);
 
